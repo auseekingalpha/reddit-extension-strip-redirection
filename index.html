@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment Successful</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #fff5f0, #ffe6e0);
+      color: #333;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      padding: 40px 30px;
+      max-width: 420px;
+      width: 90%;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .checkmark {
+      font-size: 60px;
+      color: #FF4500;
+      margin-bottom: 15px;
+      animation: pop 0.5s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      70% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 18px;
+      background: #FF4500;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    a.button:hover {
+      background: #e03e00;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="checkmark">✅</div>
+    <h2>Payment Successful!</h2>
+    <p>Your premium access will activate automatically in your Reddit Scrapper extension.</p>
+    <a href="#" class="button" onclick="window.close()">Close Tab</a>
+  </div>
+</body>
+</html>
